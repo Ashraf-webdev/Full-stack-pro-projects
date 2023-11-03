@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-size: var(--secondary-heading);
+    font-weight: 400;
+}
+
+:root {
+    --primary-color: #367484;
+    --primary-heading: 22px;
+    --secondary-heading: 18px;
+    --content-heading: 16px;
+}
+
+#resume-section {
+    min-height: 100vh;
+    background-color: #e5e3e3;
+    padding: 10px 0px;
+}
+
+#resume-section .container {
+    max-width: 65vw;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Left side */
+
+.container .left {
+    min-height: 100%;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.left img {
+    width: 170px;
+}
+
+.left .name {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.left .role {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.heading {
+    background-color: #fff;
+    color: var(--primary-color);
+    max-width: 90%;
+    padding: 5px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.heading h2 {
+    font-size: var(--primary-heading);
+}
+
+.contact, .skills {
+    padding: 10px 15px;
+}
+
+.email , .address  {
+    padding: 5px 0;
+}
+
+.phone h4, .email h4, .address h4 {
+    font-size: var(--content-heading);
+    font-weight: 400;
+} 
+
+.skills .html, .skills .css, .skills .bootsrap, .skills .tailwind-css {
+    padding: 8px 0;
+}
+
+.skills .progress-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+progress {
+    border: none;
+    width: 80%;
+    height: 7px;
+    background: #fff;
+}
+  
+progress::-webkit-progress-value {
+    background: #7cc0d1;
+}
+
+progress::-webkit-progress-bar{
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* Right side */
+
+.container .right {
+    width: 70%;
+    padding-top: 20px;
+ }
+
+  .right .heading {
+    background-color: var(--primary-color);
+    color: #fff;
+    max-width: 90%;
+    padding: 5px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  /* Objective */
+
+
+  .about {
+    max-width: 90%;
+    padding: 15px 30px;
+  }
+
+  .objective p {
+    font-size: var(--content-heading);
+  }
+
+  /* Education */
+
+  .education {
+    padding-bottom: 15px;
+  }
+
+  .BA {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+  .duration {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .duration p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .academic-details h1 {
+    font-size: var(--primary-heading);
+    padding-bottom: 5px;
+  }
+
+  .academic-details p {
+    font-size: var(--secondary-heading);
+  }
+
+  .adca, .IA, .sslc {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+/* interest */
+
+.interest .list-items {
+    padding: 15px 50px;
+    list-style-type: circle;
+    font-size: var(--secondary-heading);
+}
+
+.list-items li {
+    padding-bottom: 5px;
+}
+
+/* Strength */
+
+.strength .list-items {
+    padding: 15px 50px;
+    list-style-type: circle;
+    font-size: var(--secondary-heading);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 992px) {
+    #resume-section .container {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #resume-section .container {
+        max-width: 90vw;
+    }
+    .left img {
+        width: 120px;
+    }
+    .left .name {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .left .role {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #resume-section .container {
+        max-width: 100vw;
+    }
+    .container .left {
+        padding: 10px 0px;
+    }
+    .header {
+        padding-left: 10px;
+    }
+    .left img {
+        width: 100px;
+    }
+    .left .name {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .left .role {
+        font-size: 1rem;
+    }
+}
+
+  
